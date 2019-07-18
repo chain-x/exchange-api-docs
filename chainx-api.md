@@ -2,7 +2,7 @@
 **API EndPoint URL: <https://api.chainx.kr/>**
 
 
-## Market Data EndPoint
+## Account EndPoints
 
 ### [POST] Order
 
@@ -68,6 +68,8 @@ Key | Value
 Content-Type | application/json
 Authorization | Token
 
+
+## Market Data EndPoints
 ### [GET] Order Book
 ```
 /api/v1/trading_pairs/orderbook
