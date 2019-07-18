@@ -49,7 +49,7 @@ order_type | STRING | YES | Default LIMIT;
 ### [DELETE] Order Cancel
 
 ```
-/api/v1/orders/
+/api/v1/orders/{uuid}/
 ```
 
 Key | Value
@@ -57,7 +57,16 @@ Key | Value
 Content-Type | application/json
 Authorization | Token
 
+### [DELETE] Order Cancel All
 
+```
+/api/v1/orders/cancel_all/
+```
+
+Key | Value
+------------ | ------------
+Content-Type | application/json
+Authorization | Token
 
 ### [GET] Order Book
 ```
