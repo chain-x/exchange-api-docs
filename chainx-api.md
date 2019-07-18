@@ -24,73 +24,9 @@ trading_pair_name | STRING | YES | EX) "BTC-KRW", "ETH-KRW", "CXR-KRW"
     {
         "price": "",
         "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
     }
   ],
   "sells": [
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
-    {
-        "price": "",
-        "volume": ""
-    },
     {
         "price": "",
         "volume": ""
@@ -104,4 +40,27 @@ trading_pair_name | STRING | YES | EX) "BTC-KRW", "ETH-KRW", "CXR-KRW"
 }
 ```
 
+### [GET] Recent Trades List
+```
+/api/v1/trades/last_trade
+```
 
+**Parameters:**
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+trading_pair_name | STRING | YES | EX) "BTC-KRW", "ETH-KRW", "CXR-KRW"
+limit | INT | NO | Default 500; max 1000
+
+**Response:**
+```javascript
+[
+  {
+    "id": 23131,
+    "price": "",
+    "qty": "",
+    "side": "SELL",
+    "created": "",
+  } 
+]
+```
