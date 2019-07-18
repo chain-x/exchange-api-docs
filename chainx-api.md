@@ -1,4 +1,6 @@
 # ChainX API Document
+**API EndPoint URL: <https://api.chainx.kr/>**
+
 
 ## Market Data EndPoint
 
@@ -64,3 +66,6 @@ limit | INT | NO | Default 500; max 1000
   } 
 ]
 ```
+
+
+
