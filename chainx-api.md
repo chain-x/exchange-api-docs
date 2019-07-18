@@ -4,6 +4,58 @@
 
 ## Market Data EndPoint
 
+### [POST] Order
+```
+/api/v1/orders/
+```
+
+**Headers**
+
+Key | Value
+------------ | ------------
+Content-Type | application/json
+Authorization | Token
+
+**Parameters:**
+
+Name | Type | Mandatory | Description
+------------ | ------------ | ------------ | ------------
+trading_pair | STRING | YES | EX) "BTC-KRW", "ETH-KRW", "CXR-KRW"
+side | STRING | YES | "SELL" OR "BUY"
+volume | STRING | YES | "301232"
+price | STRING | YES | "13"
+order_type | STRING | YES | Default LIMIT;
+
+**Response: **
+```javascript
+{
+    "uuid": "",
+    "trading_pair_name": "ETH-KRW",
+    "side": "SELL",
+    "volume": "13.00000000000000000000",
+    "price": "301232.00000000000000000000",
+    "volume_filled": "0.00000000000000000000",
+    "volume_remaining": "3.00000000000000000000",
+    "order_status": "PENDING",
+    "order_type": "LIMIT",
+    "created": "",
+    "nickname": "",
+    "trades": []
+}
+```
+
+### [DELETE] Order Cancel
+```
+/api/v1/orders/
+```
+
+Key | Value
+------------ | ------------
+Content-Type | application/json
+Authorization | Token
+
+
+
 ### [GET] Order Book
 ```
 /api/v1/trading_pairs/orderbook
