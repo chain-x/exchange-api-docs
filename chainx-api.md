@@ -1,9 +1,7 @@
 # ChainX API Document
 **API EndPoint URL: <https://api.chainx.kr/>**
 
-
 ## Account EndPoints
-
 ### [POST] Order
 
 ```
