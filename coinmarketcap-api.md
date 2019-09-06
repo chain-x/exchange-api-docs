@@ -49,7 +49,7 @@
 ### [GET] Trades
 
 ```
-/api/v1.0/tradess/<Market Pair>/
+/api/v1.0/trades/<Market Pair>/
 ```
 
 **Response:**
